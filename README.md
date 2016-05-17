@@ -6,8 +6,8 @@ CSE564:		Visualization
 
 Mission:	Final Project            
 
-Author:		Caiwei Li  (110582157)
-          Yuxin Man  (110339865)
+Author:		Caiwei Li
+          Yuxin Man
 
 Date:		05/16/2016
 
