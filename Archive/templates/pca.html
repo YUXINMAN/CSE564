@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Final Project: Yuxin, Caiwei</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <link href="./static/css/style.css" rel="stylesheet" type="text/css">
+
+<!--MANMANAMANANANANANANANAANANANANANANANANANANANN-->
+  <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/lib/css/dc.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+  <style type="text/css">
+    .axis path,
+    .axis line{
+	    fill: none;
+	    stroke: black;
+	    shape-rendering: crispEdges;
+    }
+    .axis text {
+	    font-family: sans-serif;
+	    font-size: 11px;
+    }
+  </style>
+<!--MANMANAMANANANANANANANAANANANANANANANANANANANN-->
+
+</head>
+<body>
+<div id="banner">
+  <p><a href="#"><img src="./static/images/home.gif" alt="homepage"></a> | <a href="mailto:denise@mitchinson.net"><img src="./static/images/mail.gif" alt="contact"></a></p>
+  <h1>2013 American Community Survey</h1>
+</div>
+<div id="menu">
+  <ul id="nav">
+    <li id="home"><a href="/">Home</a></li>
+    <li id="stat"><a href="/state">States</a></li>
+    <li id="work"><a href="/work">Work Status</a></li>
+    <li id="hous"><a href="/house">House Type</a></li>
+    <li id="anal" class="activelink"><a href="/pca">Analysis</a></li>
+  </ul>
+</div>
+<div id="container_map">
+  <div id="content_top">
+    <div id="box">
+      <h2><img src="./static/images/last.gif" alt="ad">Elbow method and PCA result</h2>
+      <blockquote>This tag shows the pca result for the 9 selected attributes:'FINCP', 'WORKSTAT','BLD', 'DIVISION', 'REGION', 'ST', 'ACR', 'TEN', 'FES'.</blockquote>
+	  <p>The first graph shows the ratio of 9 dimensions using elbow method.</p >
+	  <p>The second graph shows the distribution of the sampled data based on two primary dimensions.</p >
+    </div>
+  </div>
+  <div id="content">
+    <dl class="curved">
+      <dt>Elbow Method</dt>
+      <dd> <br />
+        <div id="elbow_chart" class="mycharts"></div>
+        <p class="last">&nbsp;</p>
+      </dd>
+    </dl>
+    <dl class="curved">
+      <dt>MDS result</dt>
+      <dd> <br />
+        <div id="mds_chart" class="mycharts"></div>
+        <p class="last">&nbsp;</p>
+      </dd>
+    </dl>
+  </div>
+  <div id="content_right">
+	<dl class="curved">
+      <dt>PCA result</dt>
+      <dd> <br />
+        <div id="pca_chart" class="mycharts"></div>
+        <p class="last">&nbsp;</p>
+      </dd>
+    </dl>
+    <dl class="curved">
+      <dt>ISOMAP result</dt>
+      <dd> <br />
+        <div id="isomap_chart" class="mycharts"></div>
+        <p class="last">&nbsp;</p>
+      </dd>
+    </dl>
+    
+  </div>
+</div>
+<div id="footer">
+  <p><a href="/">homepage</a> | <a href="caiwei.li@stonybrook.edu">Caiwei Li</a> | <a href="yuxin.man@stonybrook.edu">Yuxin Man</a> | &copy; 2016 Visualization | Design by Yuxin Man and Caiwei Li</p>
+</div>
+<!--MANMANAMANANANANANANANAANANANANANANANANANANANN-->
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="./static/lib/js/crossfilter.js"></script>
+  <script src="./static/lib/js/d3.js"></script>
+  <script src="./static/lib/js/dc.js"></script>
+  <script src="./static/lib/js/queue.js"></script>
+
+  <script src="./static/lib/js/keen.min.js"></script>
+  <script src='./static/js/graphs_pca.js' type='text/javascript'></script>
+<!--MANMANAMANANANANANANANAANANANANANANANANANANANN-->
+</body>
+</html>
